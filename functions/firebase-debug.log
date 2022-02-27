@@ -1,0 +1,53 @@
+[debug] [2022-02-08T01:04:29.658Z] ----------------------------------------------------------------------
+[debug] [2022-02-08T01:04:29.659Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yodah\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-02-08T01:04:29.660Z] CLI Version:   10.0.1
+[debug] [2022-02-08T01:04:29.660Z] Platform:      win32
+[debug] [2022-02-08T01:04:29.660Z] Node Version:  v16.13.0
+[debug] [2022-02-08T01:04:29.664Z] Time:          Mon Feb 07 2022 17:04:29 GMT-0800 (Pacific Standard Time)
+[debug] [2022-02-08T01:04:29.664Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-08T01:04:29.667Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-02-08T01:04:29.738Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-08T01:04:29.738Z] > authorizing via signed-in user (sanietwoldeamanuel5@gmail.com)
+[debug] [2022-02-08T01:04:29.738Z] [iam] checking project fir-46c76 for permissions ["firebase.projects.get"]
+[debug] [2022-02-08T01:04:29.741Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-08T01:04:29.741Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-08T01:04:29.865Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 08 Feb 2022 01:04:31 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-08T01:04:29.880Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-46c76:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-08T01:04:30.007Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 08 Feb 2022 01:04:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=52","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-08T01:04:30.031Z] [functions] Using node@16 from host.
+[debug] [2022-02-08T01:04:30.031Z] defaultcredentials: writing to file C:\Users\yodah\AppData\Roaming\firebase\sanietwoldeamanuel5_gmail_com_application_default_credentials.json
+[debug] [2022-02-08T01:04:30.035Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-02-08T01:04:30.035Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-02-08T01:04:30.047Z] DEBUG: Setting GAC to C:\Users\yodah\AppData\Roaming\firebase\sanietwoldeamanuel5_gmail_com_application_default_credentials.json
+[debug] [2022-02-08T01:04:30.048Z] > refreshing access token with scopes: []
+[debug] [2022-02-08T01:04:30.048Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-08T01:04:30.142Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 08 Feb 2022 01:04:31 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-08T01:04:30.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-46c76/adminSdkConfig [none]
+[debug] [2022-02-08T01:04:30.376Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-46c76/adminSdkConfig 200
+[debug] [2022-02-08T01:04:30.376Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-46c76/adminSdkConfig {"projectId":"fir-46c76","storageBucket":"fir-46c76.appspot.com","locationId":"us-central"}
+[debug] [2022-02-08T01:04:30.402Z] [functions] Watching "C:\Users\yodah\Desktop\Amazon\functions" for Cloud Functions...
+[debug] [2022-02-08T01:04:30.416Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2022-02-08T01:04:30.416Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2022-02-08T01:04:30.416Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2022-02-08T01:04:30.417Z] DEBUG: [worker-~diagnostic~-4c60ec68-109f-4358-918a-97dc17bdb312]: Assigning socketPath: \\?\pipe\C:\Users\yodah\Desktop\Amazon\functions\19544
+[debug] [2022-02-08T01:04:30.417Z] DEBUG: [worker-~diagnostic~-4c60ec68-109f-4358-918a-97dc17bdb312]: BUSY
+[debug] [2022-02-08T01:04:30.616Z] DEBUG: [runtime-status] [19544] Functions runtime initialized. {"cwd":"C:\\Users\\yodah\\Desktop\\Amazon\\functions","node_version":"16.13.0"}
+[debug] [2022-02-08T01:04:30.616Z] DEBUG: [runtime-status] [19544] Disabled runtime features: undefined
+[debug] [2022-02-08T01:04:30.619Z] DEBUG: [runtime-status] [19544] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-02-08T01:04:30.622Z] DEBUG: [runtime-status] [19544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-02-08T01:04:30.624Z] DEBUG: [runtime-status] [19544] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-02-08T01:04:30.625Z] DEBUG: [runtime-status] [19544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-02-08T01:04:30.701Z] DEBUG: [runtime-status] [19544] Checked functions.config() {"config":{}}
+[debug] [2022-02-08T01:04:30.701Z] DEBUG: [runtime-status] [19544] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-02-08T01:04:30.703Z] DEBUG: [runtime-status] [19544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-02-08T01:04:30.704Z] DEBUG: [runtime-status] [19544] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-02-08T01:04:30.705Z] DEBUG: [runtime-status] [19544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-02-08T01:04:30.706Z] DEBUG: [runtime-status] [19544] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Users\\yodah\\Desktop\\Amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2022-02-08T01:04:31.004Z] [functions[us-central1-api]] http function initialized (http://localhost:5000/fir-46c76/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
+[debug] [2022-02-08T01:04:31.021Z] DEBUG: [worker-~diagnostic~-4c60ec68-109f-4358-918a-97dc17bdb312]: IDLE
